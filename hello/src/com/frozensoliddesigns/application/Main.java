@@ -1,4 +1,6 @@
-package com.frozensoliddesigns;
+package com.frozensoliddesigns.application;
+
+import com.frozensoliddesigns.flight.*;
 
 public class Main {
 
@@ -30,5 +32,9 @@ public class Main {
 
 	    System.out.println(cf.getPassengers());
         System.out.println(cf.getSeats());
+
+        CrewMember judy = new CrewMember(FlightCrewJob.CoPilot);
+
+        System.out.println(judy.getJob());
     }
 }

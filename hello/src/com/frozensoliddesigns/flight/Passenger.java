@@ -1,4 +1,4 @@
-package com.frozensoliddesigns;
+package com.frozensoliddesigns.flight;
 
 public class Passenger {
     private int checkedBags, freeBags;

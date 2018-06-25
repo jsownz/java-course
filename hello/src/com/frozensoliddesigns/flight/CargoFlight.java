@@ -1,10 +1,10 @@
-package com.frozensoliddesigns;
+package com.frozensoliddesigns.flight;
 
 public class CargoFlight extends Flight {
     private float maxCargoSpace = 1000.0f;
     private float usedCargoSpace;
     @Override
-    int getSeats() { return 12; }
+    public int getSeats() { return 12; }
 
     public CargoFlight() {}
 

@@ -1,11 +1,13 @@
-package com.frozensoliddesigns;
+package com.frozensoliddesigns.flight;
+
 
 public class Flight {
+    static final int MAX_FAA_SEATS = 550;
     private int passengers, flightNumber,
                 totalCheckedBags, maxCarryOns = getSeats() * 2, totalCarryOns;
     private char flightClass;
     private boolean[] isSeatAvailable;
-    int getSeats() { return 150; }
+    public int getSeats() { return 150; }
     private int seats = getSeats();
 
     {
@@ -19,7 +21,9 @@ public class Flight {
     public Flight() { }
 
     public Flight(int seats, int passengers) {
-        this.seats = seats;
+        if (seats <= MAX_FAA_SEATS) {
+            this.seats = seats;
+        }
         this.passengers = passengers;
     }
 
